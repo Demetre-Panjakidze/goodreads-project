@@ -14,9 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { HeaderComponent } from './shell/header/header.component';
+import { LayoutComponent } from './shell/layout/layout.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomepageComponent, HeaderComponent, LayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
