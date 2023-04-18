@@ -19,7 +19,12 @@ import { HeaderComponent } from './shell/header/header.component';
 import { LayoutComponent } from './shell/layout/layout.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, HeaderComponent, LayoutComponent],
+  declarations: [
+    AppComponent,
+    HomepageComponent,
+    HeaderComponent,
+    LayoutComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

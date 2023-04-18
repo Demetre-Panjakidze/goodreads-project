@@ -5,7 +5,7 @@ import { LayoutComponent } from './shell/layout/layout.component';
 
 const routes: Routes = [
   {
-    path: 'user/sign_in',
+    path: 'user',
     loadChildren: () =>
       import('./modules/auth/auth.module').then((n) => n.AuthModule),
   },
