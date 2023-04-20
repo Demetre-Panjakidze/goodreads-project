@@ -67,7 +67,14 @@ nb-card {
     }
 
     .apple-continue {
+      display: flex;
+      align-items: center;
       @include backgroundBorder($white, 1px, $black, $black);
+
+      img {
+        width: 45px;
+        aspect-ratio: 1;
+      }
     }
 
     .email-continue {
