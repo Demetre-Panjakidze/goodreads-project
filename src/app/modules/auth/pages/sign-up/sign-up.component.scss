@@ -1,0 +1,109 @@
+@import "../../../../../styles/main.scss";
+
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+nb-card {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+
+  h1 {
+    margin-block: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    text-align: center;
+    max-width: 60ch;
+    margin-block: 0 24px;
+  }
+
+  .website-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .social-btn {
+      border-radius: 3px;
+      cursor: pointer;
+      width: 50%;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .fb-continue {
+      @include backgroundBorder(
+        $fb-background-color,
+        1px,
+        $fb-background-color,
+        $white
+      );
+    }
+
+    .amazon-continue {
+      @include backgroundBorder(
+        $am-background-color,
+        1px,
+        $am-border-color,
+        $black
+      );
+    }
+
+    .apple-continue {
+      @include backgroundBorder($white, 1px, $black, $black);
+    }
+
+    .email-continue {
+      @include backgroundBorder(
+        $email-background-color,
+        1px,
+        $email-background-color,
+        $white
+      );
+    }
+  }
+
+  .sign-up-link {
+    margin-block: 16px 0;
+
+    a {
+      text-decoration: none;
+      color: $link-color;
+    }
+  }
+
+  .mobile-app-link {
+    margin-block: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    a {
+      .app-store-img {
+        width: 147px;
+        height: 44px;
+        background-image: url("../../../../../assets/badge-android-highres-e46912ad93a09553adffc67550d3b562.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

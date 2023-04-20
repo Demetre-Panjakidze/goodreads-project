@@ -5,7 +5,6 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LayoutComponent } from './shell/layout/layout.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbThemeModule, NbLayoutModule, NbCardModule } from '@nebular/theme';
 
@@ -17,7 +16,6 @@ import { NbThemeModule, NbLayoutModule, NbCardModule } from '@nebular/theme';
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
-    MatSlideToggleModule,
     NbCardModule,
   ],
 })
